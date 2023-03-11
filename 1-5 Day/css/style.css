@@ -14,10 +14,17 @@ img{
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
+h1{
+    font-size: 48px;
+    margin: 12px 0;
+}
 h1, p {
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
+
+
+
 #mainP{
     color: rgb(170, 96, 83);
     font-family: 'Fira Sans', sans-serif;
