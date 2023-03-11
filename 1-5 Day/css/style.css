@@ -3,6 +3,7 @@
 body{
     text-align: center;
     background-color: rgb(233, 214, 207);
+    color: rgb(83, 75, 75);
 }
 img{
     width: 200px;
@@ -16,7 +17,6 @@ img{
 h1, p {
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    color: rgb(83, 75, 75);
 }
 #mainP{
     color: rgb(170, 96, 83);
@@ -27,6 +27,7 @@ h1, p {
 a{
     text-decoration: none;
     color: rgb(167, 1, 78);
+    cursor: pointer;
 }
 a:hover{
     text-decoration: underline;
