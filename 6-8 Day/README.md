@@ -1,13 +1,13 @@
 # Day 6
-## Things covered:
-### Module Introduction Day 6.mp4
-### Using the Live Server Extension Day 6.mp4
-### The Development Server & The Local Website Address Day 6.html
-### Understanding Lists Day 6.mp4
-### Creating Lists Day 6.mp4
-### Understanding Parents Children Containers & More Day 6.mp4
-### Understanding Cascading Inheritance & Specificity Day 6.mp4
-### Styling the Full Week Page Day 6.mp4
+## 1 Things covered:
+### 2 Module Introduction Day 6.mp4
+### 3 Using the Live Server Extension Day 6.mp4
+### 4 The Development Server & The Local Website Address Day 6.html
+### 5 Understanding Lists Day 6.mp4
+### 6 Creating Lists Day 6.mp4
+### 7 Understanding Parents Children Containers & More Day 6.mp4
+### 8 Understanding Cascading Inheritance & Specificity Day 6.mp4
+### 10 Styling the Full Week Page Day 6.mp4
 ## 
 # Day 7
 ## Things covered:
