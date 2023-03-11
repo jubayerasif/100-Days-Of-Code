@@ -38,7 +38,7 @@ header > p{
 main > ol> li > h2{
     color: rgb(78, 19, 5);
 }
-main > ol> li > p{
+#dailyGoal{
     margin: 12px;
     color: rgb(71, 29, 22);
     font-weight: 400;
