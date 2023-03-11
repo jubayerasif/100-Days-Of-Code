@@ -1,5 +1,5 @@
 # Day 1
-## Things covered
+## Things covered:
 ### What Is Web Development & How Does The Web Work Day 1
 ### The Three Key Programming Languages Day 1.
 ### What About The www Day 1
@@ -20,12 +20,27 @@
 ### Colors Overview
 ## 
 # Day 3
-## Things covered
+## Things covered:
+### Working with Colors Day 3
+### Formatting our Code Day 3
+### Working with the Browser Developer Tools Day 3
+### Adding a Link Day 3
+### You can Nest HTML Elements Day 3
+### Using Global CSS Styles Day 3
+### CSS Code Formatting Day 3
+### The HTML Document Skeleton & Metadata Day 3
+### Visual Studio Code Shortcuts & Tricks Day 3
+### Code Comments Day 3
+## 
+# Day 4
+## Things covered:
+### Styling the Anchor Element Also with Pseudo Hover Day 4.
 ### 
 ### 
 ### 
 ### 
-
+### 
+### 
 
 ### 
 ### 
