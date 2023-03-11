@@ -48,25 +48,3 @@
 ### Using Other Fonts from Google Fonts Day 4
 ### Using a Shared CSS File Day 5
 ### Organizing Source Files in Folders Day 5
-
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
