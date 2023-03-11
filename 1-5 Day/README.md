@@ -35,6 +35,22 @@
 # Day 4
 ## Things covered:
 ### Styling the Anchor Element Also with Pseudo Hover Day 4.
+### Why its Called Cascading Style Sheets Day 4.
+### Storing CSS Code in External Files Day 4.
+### The Void Element Syntax Day 4
+### Multiple Files & Requests Day 4
+### Selecting Single Elements with the ID Selector Day 4
+### Working with fontSize and px Day 4
+### Using Other Fonts from Google Fonts Day 4
+## 
+# Day 5
+## Things covered:
+### Using Other Fonts from Google Fonts Day 4
+### Using a Shared CSS File Day 5
+### Organizing Source Files in Folders Day 5
+
+### 
+### 
 ### 
 ### 
 ### 
