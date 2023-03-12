@@ -41,8 +41,9 @@ main > ul > li {
 main > ul > .li {
   color: #fef2c1;
 }
-main > p > span {
+main > p > a {
   font-weight: 600;
+  text-decoration: none;
   color: #000;
   background-color: #fef2c1;
   padding: 3px;
