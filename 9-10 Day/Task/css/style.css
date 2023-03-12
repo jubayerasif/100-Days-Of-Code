@@ -6,8 +6,6 @@ body {
 }
 header {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 header > h1 {
   margin-top: 10px;
@@ -16,12 +14,12 @@ header > h1 {
   color: #5831be;
 }
 header > img {
-  padding: 0 50px;
   width: 260px;
 }
 main {
-  margin: 55px 570px 0 570px;
-  padding: 25px 22px;
+  margin: 32px auto;
+  padding: 32px;
+  width: 700px;
   color: #fff;
   background-color: #774ad7;
   border-radius: 5px;
