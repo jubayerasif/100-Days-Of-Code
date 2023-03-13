@@ -50,25 +50,4 @@
 # Day 20
 ## Things covered:
 ### 1. Working with Unicode UTF8
-### 2. Finishing Touche
-### 3. Optional Diving Deeper Into position Flex-box & the Grid 
-### 4.
-### 5.
-### 6.
-### 7.
-### 8.
-
-
-
-# Day 21
-## Things covered:
-### 1. Creating the Card Look
-### 2.
-### 3.
-### 4.
-### 5.
-### 6.
-### 7.
-### 8.
-### 9.
-### 10.
+### 2. Optional Diving Deeper Into position Flex-box & the Grid
