@@ -16,13 +16,31 @@ form{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
 input {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgba(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
+}
+
+input:focus{
+    background-color: rgb(219, 190, 253);
+    color: rgb(32, 5, 63);
+    border-color: rgb(32, 5, 63);
 }
 
 button{
     display: block;
+    /* font: normal 1rem 'Roboto', sans-serif; */
+    font: inherit;
+
 }
 
