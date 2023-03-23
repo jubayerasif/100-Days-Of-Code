@@ -6,7 +6,7 @@
 ### 4. How To Use The Attached Code
 ##
 # Day 2
-## Things covered
+## Things covered:
 ### 1. Learning Check HTML Basics
 ### 2. Creating our First HTML Page
 ### 3. Setting Up a Development Environment
