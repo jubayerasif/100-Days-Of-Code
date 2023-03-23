@@ -1,10 +1,23 @@
 body {
   background-color: rgb(31, 30, 30);
-  margin: 8rem;
+  margin-left: 2rem;
+  margin-top: 6rem;
+  font-family: 'Roboto', sans-serif;
 }
 
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
 input {
-    width: 20rem;
+    width: 100%;
     display: block;
     margin-bottom: 1rem;
 }
