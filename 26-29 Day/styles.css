@@ -7,6 +7,8 @@ body {
 header> h1{
     text-align: center;
     color: #fff;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 ul{
     list-style: none;
