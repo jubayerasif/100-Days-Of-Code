@@ -43,6 +43,9 @@ select {
     padding: 0.25rem;
     color: rgb(61, 58, 58);
 }
+textarea{
+    resize: none;
+}
 
 input:focus,
 textarea:focus{

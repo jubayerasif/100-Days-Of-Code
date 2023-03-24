@@ -29,7 +29,7 @@
                         </li>
                         <li>
                             <label for="usermail">Your Email:</label>
-                            <input type="email" name="user-email" id="usermail" required />
+                            <input type="email" name="user-email" id="usermail" required placeholder="myemail@gmail.com"/>
                         </li>
                         <li>
                             <label for="userpassword">Your Password:</label>
@@ -65,24 +65,24 @@
 
                 <section>
                     <label for="usermessage">Your Message</label>
-                    <textarea name="" id="usermessage"></textarea>
+                    <textarea name="" id="usermessage" rows="8"></textarea>
                 </section>
 
                 <section>
                     <h2>How Should We Verify Your Account?</h2>
 
                     <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-text-message" value="text" />
+                        <input type="radio" name="verify" id="verify-text-message" value="text"  required />
                         <label for="verify-text-message">Via a text message(SMS)</label>
                     </li>
 
                     <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-phone" value="phone" />
+                        <input type="radio" name="verify" id="verify-phone" value="phone" required />
                         <label for="verify-phone">Via a phone call</label>
                     </li>
 
                     <li class="form-control-inline">
-                        <input type="radio" name="verify" id="verify-email" value="email" />
+                        <input type="radio" name="verify" id="verify-email" value="email" required />
                         <label for="verify-email">Via a email</label>
                     </li>
                 </section>
@@ -104,7 +104,7 @@
                 <hr>
                 <section>
                     <div class="form-control-inline">
-                        <input type="checkbox" name="terms" id="agree-terms" />
+                        <input type="checkbox" name="terms" id="agree-terms" required />
                         <label for="agree-terms">Agree to terms?</label>
                     </div>
                 </section>
