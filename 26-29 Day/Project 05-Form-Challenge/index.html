@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Form Challenge</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <div>
+            <form action="/challenge" method="GET">
+                <section>
+                    <h1>How can we help you?</h1>
+                    <ul>
+                        <li>
+                            <label for="username">Your Name</label>
+                            <input type="text" name="username" id="username" required />
+                        </li>
+                        <li>
+                            <label for="email">Your E-mail Address</label>
+                            <input type="email" name="email" id="email" required />
+                        </li>
+                        <li>
+                            <label for="phone">Your Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required minlength="11" />
+                        </li>
+                        <li>
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" required minlength="10" maxlength="200" rows="8" ></textarea>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div>
+                        <label for="channel">How did you find us?</label>
+                        <select name="channel" id="channel">
+                            <option value="search">Web Research</option>
+                            <option value="word-of-mouth">Word of Mouth</option>
+                            <option value="youtube">Youtube</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </section>
+                <section>
+                    <h1>How should we reply?</h1>
+                    <ul>
+                        <li class="form-control-inline">
+                            <input type="radio" name="contact" id="contact-email" value="email" required />
+                            <label for="contact-email">Send me a email</label>
+                        </li>
+                        <li class="form-control-inline">
+                            <input type="radio" name="contact" id="contact-phone" value="phone" required  />
+                            <label for="contact-phone">Call me</label>
+                        </li>
+                        <li class="form-control-inline">
+                            <input type="radio" name="contact" id="no-reply" value="none" required />
+                            <label for="no-reply">Don't reply</label>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="form-control-inline">
+                        <input type="checkbox" name="terms" id="agree-terms" required />
+                        <label for="agree-terms">Agree to the terms?</label>
+                    </div>
+                </section>
+                <section>
+                    <button type="reset" class="btn-empty">Clear</button>
+                    <button type="submit" class="btn-filled">Submit</button>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
