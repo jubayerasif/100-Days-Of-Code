@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +10,14 @@
     <link rel="stylesheet" href="styles.css">
     <title>Forms</title>
 </head>
-
 <body>
     <div>
         <form action="" method="GET">
             <label for="userName">Your Name:</label>
             <input type="text" name="user-name" id="userName" />
+            <label for="usermessage">Your Message</label>
+            <textarea name="" id="usermessage"></textarea>
+
             <label for="usermail">Your Email:</label>
             <input type="email" name="user-email" id="usermail" />
             <label for="userage">Your Age:</label>
@@ -26,6 +27,15 @@
             <label for="birthdate">Your Birthdate</label>
             <input type="date" name="user-birthdate" id="birthdate" />
             <hr>
+            <label for="favorite-programming-language">Your Favorite Programming Language?</label>
+            <select name="favorite-programming-language" id="favorite-programming-language">
+                <option value="javascript">My Favorite Programming Language is Javascript</option>
+                <option value="python">Python</option>
+                <option value="c++">C++</option>
+                <option value="ruby">Ruby</option>
+                <option value="swift">Swift</option>
+                <option value="none">None</option>
+            </select>
             <h2>How Should We Verify Your Account?</h2>
             <div class="form-control-inline">
                 <input type="radio" name="verify" id="verify-text-message" value="text" />
@@ -58,5 +68,4 @@
     </div>
 
 </body>
-
 </html>
