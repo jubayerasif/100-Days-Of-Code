@@ -18,21 +18,22 @@
     </header>
     <main>
         <div>
+            <!-- <form action="" method="GET" novalidate> -->
             <form action="" method="GET">
                 <section>
                     <h2>Your Personal Details</h2>
                     <ul>
                         <li>
                             <label for="userName">Your Name:</label>
-                            <input type="text" name="user-name" id="userName" />
+                            <input type="text" name="user-name" id="userName" required />
                         </li>
                         <li>
                             <label for="usermail">Your Email:</label>
-                            <input type="email" name="user-email" id="usermail" />
+                            <input type="email" name="user-email" id="usermail" required />
                         </li>
                         <li>
                             <label for="userpassword">Your Password:</label>
-                            <input type="password" name="user-password" id="userpassword" />
+                            <input type="password" name="user-password" id="userpassword" required minlength="8" />
                         </li>
                     </ul>
                 </section>
@@ -42,11 +43,11 @@
                     <ul>
                         <li>
                             <label for="userage">Your Age:</label>
-                            <input type="number" step="1" name="user-age" id="userage" />
+                            <input type="number" step="1" name="user-age" id="userage" required min="18" max="70" />
                         </li>
                         <li>
                             <label for="birthdate">Your Birthdate</label>
-                            <input type="date" name="user-birthdate" id="birthdate" />
+                            <input type="date" name="user-birthdate" id="birthdate" required min="1953-01-01" max="2005-01-01"/>
                         </li>
                         <li>
                             <label for="favorite-programming-language">Your Favorite Programming Language?</label>
