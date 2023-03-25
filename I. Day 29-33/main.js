@@ -13,4 +13,5 @@ let job = {
     place: 'Bangladesh',
     salary: 0,
 };
-alert(hobbies[0])
+alert(hobbies[0]);
+alert(job.title);
