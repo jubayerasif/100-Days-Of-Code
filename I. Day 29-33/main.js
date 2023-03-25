@@ -42,3 +42,4 @@ age = 70;
 totalAdultYears = calculateAdultYears(age);
 
 alert(totalAdultYears);
+
