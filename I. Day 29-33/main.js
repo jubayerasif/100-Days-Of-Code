@@ -29,6 +29,9 @@ let totalAdultYears;
 
 function calculateAdultYears(userAge) {
   // adultYears = userAge - 18;
+  // let result;
+  // result = userAge - 18;
+  // return result;
   return userAge - 18;
 }
 
