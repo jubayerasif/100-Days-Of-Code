@@ -17,7 +17,7 @@
 // alert(job.title);
 
 let userName = "Arnold";
-let userAge = 75;
+let age = 75;
 let hobbies = ["Cricket", "Cooking", "Watching"];
 let job = {
   title: "Cricketer",
@@ -27,15 +27,15 @@ let job = {
 
 let totalAdultYears;
 
-function calculateAdultYears() {
+function calculateAdultYears(userAge) {
   // adultYears = userAge - 18;
   return userAge - 18;
 }
 
-totalAdultYears = calculateAdultYears();
+totalAdultYears = calculateAdultYears(age);
 alert(totalAdultYears);
 
-userAge = 70;
-calculateAdultYears();
+age = 70;
+totalAdultYears = calculateAdultYears(age);
 
 alert(totalAdultYears);
