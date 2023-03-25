@@ -5,13 +5,28 @@
 // alert(greetingText);
 // alert(date);
 
-let userName= "Jubayer";
-let userAge = 18;
-let hobbies = ['Coding', 'Cooking', 'Watching'];
+// let userName= "Jubayer";
+// let userAge = 18;
+// let hobbies = ['Coding', 'Cooking', 'Watching'];
+// let job = {
+//     title: 'Student',
+//     place: 'Bangladesh',
+//     salary: 0,
+// };
+// alert(hobbies[0]);
+// alert(job.title);
+
+let userName= "Arnold";
+let userAge = 75;
+let hobbies = ['Cricket', 'Cooking', 'Watching'];
 let job = {
-    title: 'Student',
-    place: 'Bangladesh',
-    salary: 0,
+    title: 'Cricketer',
+    place: 'America',
+    salary: 5000,
 };
-alert(hobbies[0]);
-alert(job.title);
+let adultYears = userAge - 18;
+alert(adultYears);
+
+userAge = 70;
+adultYears = userAge - 18;
+alert(adultYears);
