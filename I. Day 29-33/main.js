@@ -8,5 +8,9 @@
 let userName= "Jubayer";
 let userAge = 18;
 let hobbies = ['Coding', 'Cooking', 'Watching'];
-let job = {title: 'Student', place: 'Bangladesh', salary: 0};
+let job = {
+    title: 'Student',
+    place: 'Bangladesh',
+    salary: 0,
+};
 alert(hobbies[0])
