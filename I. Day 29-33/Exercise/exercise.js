@@ -21,8 +21,8 @@
 // 6) Execute your custom command from (5) and output ("alert") the result
 
 
-let courseName = "100 Days of Code";
-let coursePrice = 200;
-let courseGoal = []
+let courseName = "100 Days of Web Development";
+let coursePrice = 10;
+let courseGoals = []
 
 alert(coursePrice);
