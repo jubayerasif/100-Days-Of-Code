@@ -43,3 +43,11 @@ totalAdultYears = calculateAdultYears(age);
 
 alert(totalAdultYears);
 
+let person = {
+  name: 'Arnold',
+  greet() {
+    alert('Hello');
+  }
+};
+
+person.greet();
