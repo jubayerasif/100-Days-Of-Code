@@ -29,24 +29,27 @@ let totalAdultYears;
 
 function calculateAdultYears(userAge) {
   // adultYears = userAge - 18;
-  // let result;
-  // result = userAge - 18;
-  // return result;
-  return userAge - 18;
+  let result;
+  result = userAge - 18;
+  return result;
+  // return userAge - 18;
 }
 
 totalAdultYears = calculateAdultYears(age);
-alert(totalAdultYears);
+// alert(totalAdultYears);
+console.log(totalAdultYears);
 
 age = 70;
 totalAdultYears = calculateAdultYears(age);
 
-alert(totalAdultYears);
+// alert(totalAdultYears);
+console.log(totalAdultYears);
 
 let person = {
   name: 'Arnold',
   greet() {
-    alert('Hello');
+    // alert('Hello!');
+    console.log('Hello!');
   }
 };
 
