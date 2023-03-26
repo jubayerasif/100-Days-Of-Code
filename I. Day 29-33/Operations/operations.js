@@ -32,3 +32,8 @@ let e = 2 + '2'; // '22' => a string! (i.e. the number 2 is treated like a strin
 let f = '2' + '2'; // '22' => a string! ('2' and '2' concatenated)
 let g = '2' * 3; // 6 => a number
 */
+
+let userName = 'Asif';
+console.log(userName.length)
+console.log(userName.toUpperCase());;
+
