@@ -23,6 +23,8 @@
 
 let courseName = "100 Days of Web Development";
 let coursePrice = 10;
-let courseGoals = []
+let courseGoals = ['Learn Web Development', 'Become a web developer', 'Have Fun']
 
+alert(courseName);
 alert(coursePrice);
+alert(courseGoals);
