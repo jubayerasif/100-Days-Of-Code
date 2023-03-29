@@ -16,4 +16,9 @@ document.querySelector('#')
 let newAnchorElement = document.createElement('a');
 
 // 2. Get access to the parent element that should hold the new element
+
+let firstParagraph = document.querySelector('p');
+
 // 3. Insert the new element into the parent element content
+
+firstParagraph.append(newAnchorElement);
