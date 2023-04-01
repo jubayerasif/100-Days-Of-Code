@@ -5,4 +5,4 @@ function changeParagraphText() {
     console.log('Paragraph Clicked Here!');
 }
 
-paragraphElement.addEventListener('click', changeParagraphText)
+paragraphElement.addEventListener('click', changeParagraphText);
