@@ -25,3 +25,38 @@ inputElement.addEventListener("input", retrieveUserInput);
 
 let productNameInputElement = document.getElementById('product-name');
 let remainingCharsElement = document.getElementById('remaining-chars');
+
+
+function updateRemainingCharacters(){
+    let enteredText = event.target.value;
+    let enteredTextLength = enteredText.length;
+        
+
+
+}
+
+productNameInputElement.addEventListener('input', updateRemainingCharacters)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
