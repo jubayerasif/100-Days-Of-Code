@@ -1,3 +1,4 @@
+/*
 let paragraphElement = document.querySelector("p");
 
 function changeParagraphText(event) {
@@ -20,3 +21,7 @@ function retrieveUserInput(event) {
 }
 
 inputElement.addEventListener("input", retrieveUserInput);
+*/
+
+let productNameInputElement = document.getElementById('product-name');
+let remainingCharsElement = document.getElementById('remaining-chars');
