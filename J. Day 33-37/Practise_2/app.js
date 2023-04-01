@@ -1,8 +1,10 @@
 let paragraphElement = document.querySelector("p");
 
-function changeParagraphText() {
+function changeParagraphText(event) {
   paragraphElement.textContent = "Clicked";
   console.log("Paragraph Clicked Here!");
+    console.log(event);
+
 }
 
 paragraphElement.addEventListener("click", changeParagraphText);
