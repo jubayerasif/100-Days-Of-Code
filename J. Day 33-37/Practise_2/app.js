@@ -38,3 +38,6 @@ function updateRemainingCharacters(){
 }
 
 productNameInputElement.addEventListener('input', updateRemainingCharacters)
+
+const spanElement = document.getElementById('remaining-chars');
+spanElement.style.color = 'rgb(0, 120, 50)';
