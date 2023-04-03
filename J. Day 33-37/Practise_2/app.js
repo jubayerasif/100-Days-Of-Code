@@ -32,34 +32,9 @@ function updateRemainingCharacters(){
     const enteredText = event.target.value;
     const enteredTextLength = enteredText.length;
 
-
     const remainingCharacters = maxAllowedChars - enteredTextLength;
 
     remainingCharsElement.textContent = remainingCharacters;
 }
 
 productNameInputElement.addEventListener('input', updateRemainingCharacters)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
