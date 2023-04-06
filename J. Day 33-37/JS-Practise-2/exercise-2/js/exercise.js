@@ -12,11 +12,11 @@ const secondButtonElement = document.getElementById('change-bg-btn');
 //    - Output the second button WITHOUT using the variable in which it's stored
 
 function removeParagraph() {
-
+    console.dir(firstButtonElement);
 }
 
-function changeBackgroundColor() {
-
+function changeBackgroundColor(event) {
+    console.dir(event.target);
 }
 
 firstButtonElement.addEventListener('click', removeParagraph);
