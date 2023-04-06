@@ -19,8 +19,8 @@ function changeBackgroundColor() {
 
 }
 
-
 firstButtonElement.addEventListener('click', removeParagraph);
+secondButtonElement.addEventListener('click', changeBackgroundColor);
 
 // 3) Now select and store the paragraphs mentioned in the text you see on the page
 //    (first and third paragraph)
