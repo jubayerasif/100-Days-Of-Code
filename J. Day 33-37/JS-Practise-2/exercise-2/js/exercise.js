@@ -1,5 +1,4 @@
 // Practice!
-
 // 1) Select the two <button> elements and store them in two different variables.
 //    - Select the first button without adding or using any "id"
 //    - Select the second button by using an "id"
