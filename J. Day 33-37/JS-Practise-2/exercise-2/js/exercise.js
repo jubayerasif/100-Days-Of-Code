@@ -24,9 +24,7 @@ const secondButtonElement = document.getElementById('change-bg-btn');
 
 // 3) Now select and store the paragraphs mentioned in the text you see on the page
 //    (first and third paragraph)
-//    - Select BOTH paragraphs by drilling into the document and "navigating" to the
-//      mentioned elements
-//    - If you struggle with DOM drilling, use "ids" instead but watch the solution!
+//    - Select BOTH paragraphs by drilling into the document and "navigating" to the mentioned elements
 
 const firstParagraphElement = document.body.children[2].children[1];
 console.log(firstParagraphElement);
@@ -44,14 +42,10 @@ function removeParagraph() {
 
 function changeBackgroundColor(event) {
     // firstParagraphElement.style.backgroundColor = 'blue';
-    
+    firstParagraphElement.classList.add('blue-bg');
 }
 
 firstButtonElement.addEventListener('click', removeParagraph);
 secondButtonElement.addEventListener('click', changeBackgroundColor);
 
 // 5) Solve (4) both by changing the "inline styles" as well as by adding CSS classes
-
-
-
-//    Note: You'll have to add those classes to the styles.css file first!
