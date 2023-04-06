@@ -11,6 +11,16 @@ const secondButtonElement = document.getElementById('change-bg-btn');
 //    - Output the first button by using the variable in which it's stored
 //    - Output the second button WITHOUT using the variable in which it's stored
 
+function removeParagraph() {
+
+}
+
+function changeBackgroundColor() {
+
+}
+
+
+firstButtonElement.addEventListener('click', removeParagraph);
 
 // 3) Now select and store the paragraphs mentioned in the text you see on the page
 //    (first and third paragraph)
