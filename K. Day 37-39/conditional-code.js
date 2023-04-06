@@ -1,5 +1,9 @@
 const myName = 'Jubayer';
 
-if(){
-    console.log('Hello!');
+if(true){
+    console.log('Hello!', myName);
 }
+
+
+
+
