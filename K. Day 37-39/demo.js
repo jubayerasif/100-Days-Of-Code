@@ -7,7 +7,7 @@ const maxAllowedChars = productNameInputElement.maxLength;
 
 function updateRemainingCharacters(event) {
   const enteredText = event.target.value;
-  const enteredTextLength = enteredText.length; 
+  const enteredTextLength = enteredText.length;
 
   const remainingCharacters = maxAllowedChars - enteredTextLength;
 
