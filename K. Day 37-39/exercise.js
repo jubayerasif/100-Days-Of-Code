@@ -1,6 +1,6 @@
 // Exercise Time!
 
-// 1. Select the <h1> element by "drilling into the DOM" and 
+// 1. Select the <h1> element by "drilling into the DOM" and
 //    save it in a variable with a name of your choice
 
 let h1Element = document.body.firstElementChild;
@@ -13,7 +13,7 @@ console.dir(h1Element);
 
 console.dir(h1Element.parentElement);
 
-//    BONUS: Try using the variable from (1) to get access to the 
+//    BONUS: Try using the variable from (1) to get access to the
 //    sibling element (i.e. the <p> element next to the <h1> element)
 
 console.dir(h1Element.nextElementSibling);
@@ -26,7 +26,7 @@ h1Element = document.getElementById('first-title');
 console.dir(h1Element);
 
 // 4. Select the second <p> element with querySelector (you might
-//    need to add something in the HTML code, e.g. a class) 
+//    need to add something in the HTML code, e.g. a class)
 //    and store it in a new variable with a name of your choice
 
 let highlightedParagraph = document.querySelector('.highlighted-paragraph');
