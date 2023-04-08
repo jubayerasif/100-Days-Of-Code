@@ -1,5 +1,5 @@
-const productNameInputElement = document.getElementById('product-name');
-const remainingCharsElement = document.getElementById('remaining-chars');
+const productNameInputElement = document.getElementById("product-name");
+const remainingCharsElement = document.getElementById("remaining-chars");
 
 // console.dir(productNameInputElement);
 
@@ -13,11 +13,10 @@ function updateRemainingCharacters(event) {
 
   remainingCharsElement.textContent = remainingCharacters;
 
-if(remainingCharacters <= 10){
-  remainingCharsElement.classList.add('warning');
-  productNameInputElement.classList.add('warning');
+  if (remainingCharacters <= 10) {
+    remainingCharsElement.classList.add("warning");
+    productNameInputElement.classList.add("warning");
+  }
 }
 
-}
-
-productNameInputElement.addEventListener('input', updateRemainingCharacters);
+productNameInputElement.addEventListener("input", updateRemainingCharacters);
