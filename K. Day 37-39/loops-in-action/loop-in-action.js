@@ -15,25 +15,20 @@ function calculateSum() {
   const outputResultElement = document.getElementById("calculated-sum");
 
   outputResultElement.textContent = sumUpToNumber;
-  outputResultElement.style.display = 'block';
+  outputResultElement.style.display = "block";
 }
 
 calculateSumButtonElement.addEventListener("click", calculateSum);
 
 // Highlight Links
 
-const highlightLinksButtonElement = document.querySelector('#highlight-links button');
+const highlightLinksButtonElement = document.querySelector(
+  "#highlight-links button"
+);
 
 function highlightLinks() {
-
+  
 }
 
-highlightLinksButtonElement.addEventListener('click', highlightLinks);
-
-
-
-
-
-
-
+highlightLinksButtonElement.addEventListener("click", highlightLinks);
 
