@@ -22,9 +22,13 @@ calculateSumButtonElement.addEventListener("click", calculateSum);
 
 // Highlight Links
 
+const highlightLinksButtonElement = document.querySelector('#highlight-links button');
 
+function highlightLinks() {
 
+}
 
+highlightLinksButtonElement.addEventListener('click', highlightLinks);
 
 
 
