@@ -33,3 +33,11 @@ function highlightLinks() {
 }
 
 highlightLinksButtonElement.addEventListener("click", highlightLinks);
+
+// Display User Data
+
+const dummyUserData = {
+  firstName: 'Jubayer',
+  lastName: 'Hasan',
+  age: 18
+}
