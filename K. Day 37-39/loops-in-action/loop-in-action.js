@@ -45,7 +45,14 @@ const dummyUserData = {
 const displayUserDataButtonElement = document.querySelector('#user-data button');
 
 function displayUserData(){
+  const outputDataElement = document.getElementById('output-user-data');
 
+  for(const key in dummyUserData) {
+    const newUserDataListItemElement = document.createElement('li');
+    const outputText = key.toUpperCase() + ': ' + dummyUserData[key];
+    newUserDataListItemElement.textContent = outputText;
+    outputDataElement.append(newUserDataListItemElement);
+  }
 }
 
 displayUserDataButtonElement.addEventListener('click', displayUserData);
