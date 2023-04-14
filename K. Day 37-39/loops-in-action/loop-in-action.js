@@ -41,3 +41,11 @@ const dummyUserData = {
   lastName: 'Hasan',
   age: 18
 }
+
+const displayUserDataButtonElement = document.querySelector('#user-data button');
+
+function displayUserData(){
+
+}
+
+displayUserDataButtonElement.addEventListener('click', displayUserData);
