@@ -9,7 +9,7 @@ function calculateSum() {
   let sumUpToNumber = 0;
 
   for (let i = 0; i <= enteredNumber; i++) {
-    sumUpToNumber = sumUpToNumber + i;
+    sumUpToNumber+= i;
   }
 
   const outputResultElement = document.getElementById("calculated-sum");
