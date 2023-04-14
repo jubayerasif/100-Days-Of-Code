@@ -19,3 +19,17 @@ function calculateSum() {
 }
 
 calculateSumButtonElement.addEventListener("click", calculateSum);
+
+// Highlight Links
+
+
+
+
+
+
+
+
+
+
+
+
