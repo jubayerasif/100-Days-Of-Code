@@ -9,7 +9,7 @@ function calculateSum() {
   let sumUpToNumber = 0;
 
   for (let i = 0; i <= enteredNumber; i++) {
-    sumUpToNumber+= i;
+    sumUpToNumber += i;
   }
 
   const outputResultElement = document.getElementById("calculated-sum");
@@ -22,7 +22,9 @@ calculateSumButtonElement.addEventListener("click", calculateSum);
 
 // Highlight Links
 
-const highlightLinksButtonElement = document.querySelector("#highlight-links button");
+const highlightLinksButtonElement = document.querySelector(
+  "#highlight-links button"
+);
 
 function highlightLinks() {
   const anchorElements = document.querySelectorAll("#highlight-links a"); // returns array
@@ -37,24 +39,25 @@ highlightLinksButtonElement.addEventListener("click", highlightLinks);
 // Display User Data
 
 const dummyUserData = {
-  firstName: 'Jubayer',
-  lastName: 'Hasan',
-  age: 18
-}
+  firstName: "Jubayer",
+  lastName: "Hasan",
+  age: 18,
+};
 
-const displayUserDataButtonElement = document.querySelector('#user-data button');
+const displayUserDataButtonElement =
+  document.querySelector("#user-data button");
 
-function displayUserData(){
-  const outputDataElement = document.getElementById('output-user-data');
+function displayUserData() {
+  const outputDataElement = document.getElementById("output-user-data");
 
-  outputDataElement.innerHTML = '';
+  outputDataElement.innerHTML = "";
 
-  for(const key in dummyUserData) {
-    const newUserDataListItemElement = document.createElement('li');
-    const outputText = key.toUpperCase() + ': ' + dummyUserData[key];
+  for (const key in dummyUserData) {
+    const newUserDataListItemElement = document.createElement("li");
+    const outputText = key.toUpperCase() + ": " + dummyUserData[key];
     newUserDataListItemElement.textContent = outputText;
     outputDataElement.append(newUserDataListItemElement);
   }
 }
 
-displayUserDataButtonElement.addEventListener('click', displayUserData);
+displayUserDataButtonElement.addEventListener("click", displayUserData);
