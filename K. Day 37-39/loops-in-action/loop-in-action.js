@@ -38,6 +38,30 @@ highlightLinksButtonElement.addEventListener("click", highlightLinks);
 
 // Display User Data
 
+// const dummyUserData = {
+//   firstName: "Jubayer",
+//   lastName: "Hasan",
+//   age: 18,
+// };
+
+// const displayUserDataButtonElement =
+//   document.querySelector("#user-data button");
+
+// function displayUserData() {
+//   const outputDataElement = document.getElementById("output-user-data");
+
+//   outputDataElement.innerHTML = "";
+
+//   for (const key in dummyUserData) {
+//     const newUserDataListItemElement = document.createElement("li");
+//     const outputText = key.toUpperCase() + ": " + dummyUserData[key];
+//     newUserDataListItemElement.textContent = outputText;
+//     outputDataElement.append(newUserDataListItemElement);
+//   }
+// }
+
+// displayUserDataButtonElement.addEventListener("click", displayUserData);
+
 const dummyUserData = {
   firstName: "Jubayer",
   lastName: "Hasan",
