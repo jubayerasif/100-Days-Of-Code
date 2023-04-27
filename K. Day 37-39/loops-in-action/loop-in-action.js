@@ -49,6 +49,7 @@ highlightLinksButtonElement.addEventListener("click", highlightLinks);
 
 // function displayUserData() {
 //   const outputDataElement = document.getElementById("output-user-data");
+////const outputDataElement = document.querySelector("#user-data ul");
 
 //   outputDataElement.innerHTML = "";
 
@@ -72,7 +73,8 @@ const displayUserDataButtonElement =
   document.querySelector("#user-data button");
 
 function displayUserData() {
-  const outputDataElement = document.getElementById("output-user-data");
+  // const outputDataElement = document.getElementById("output-user-data");
+  const outputDataElement = document.querySelector("#user-data ul");
 
   outputDataElement.innerHTML = "";
 
