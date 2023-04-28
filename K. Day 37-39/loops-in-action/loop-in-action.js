@@ -97,7 +97,7 @@ function deriveNumberOfDiceRolls() {
 
   const outputTotalRollsElement = document.getElementById("output-total-rolls");
   const outputTotalNumberElement = document.getElementById(
-    "output-total-number"
+    "output-target-number"
   );
 
   outputTotalNumberElement.textContent = enteredNumber;
