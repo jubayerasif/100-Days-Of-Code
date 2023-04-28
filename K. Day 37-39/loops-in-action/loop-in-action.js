@@ -69,6 +69,9 @@ const rollDiceButtonElement = document.querySelector("#statistics button");
 
 function rollDice() {}
 
-function deriveNumberOfDiceRolls() {}
+function deriveNumberOfDiceRolls() {
+  const targetNumberInputElement = document.getElementById('user-target-number');
+
+}
 
 rollDiceButtonElement.addEventListener("click", deriveNumberOfDiceRolls);
