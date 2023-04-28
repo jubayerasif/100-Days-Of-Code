@@ -70,7 +70,11 @@ const rollDiceButtonElement = document.querySelector("#statistics button");
 function rollDice() {}
 
 function deriveNumberOfDiceRolls() {
-  const targetNumberInputElement = document.getElementById('user-target-number');
+  const targetNumberInputElement = document.getElementById("user-target-number");
+  const diceRollsListElement = document.getElementById("dice-rolls");
+
+  const enteredNumber = targetNumberInputElement.value;
+  diceRollsListElement.innerHTML = '';
 
 }
 
