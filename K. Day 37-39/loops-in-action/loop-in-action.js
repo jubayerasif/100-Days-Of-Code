@@ -49,7 +49,7 @@ const displayUserDataButtonElement =
 
 function displayUserData() {
   const outputDataElement = document.getElementById("output-user-data");
-//const outputDataElement = document.querySelector("#user-data ul");
+  //const outputDataElement = document.querySelector("#user-data ul");
 
   outputDataElement.innerHTML = "";
 
@@ -64,3 +64,11 @@ function displayUserData() {
 displayUserDataButtonElement.addEventListener("click", displayUserData);
 
 // Statistics / Roll the Dice
+
+const rollDiceButtonElement = document.querySelector("#statistics button");
+
+function rollDice() {}
+
+function deriveNumberOfDiceRolls() {}
+
+rollDiceButtonElement.addEventListener("click", deriveNumberOfDiceRolls);
