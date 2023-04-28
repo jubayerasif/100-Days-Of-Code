@@ -67,7 +67,9 @@ displayUserDataButtonElement.addEventListener("click", displayUserData);
 
 const rollDiceButtonElement = document.querySelector("#statistics button");
 
-function rollDice() {}
+function rollDice() {
+  return Math.floor(Math.random() * 6) + 1;
+}
 
 function deriveNumberOfDiceRolls() {
   const targetNumberInputElement =
@@ -86,15 +88,17 @@ function deriveNumberOfDiceRolls() {
     //   hasRolledTargetNumber = true;
     // }
     numberOfRolls++;
-    const newRollsListItemElement = document.createElement('li');
-    const outputText = 'Roll ' + numberOfRolls + ': ' + rolledNumber;
+    const newRollsListItemElement = document.createElement("li");
+    const outputText = "Roll " + numberOfRolls + ": " + rolledNumber;
     newRollsListItemElement.textContent = outputText;
     diceRollsListElement.append(newRollsListItemElement);
     hasRolledTargetNumber = rolledNumber == enteredNumber;
   }
 
-  const outputTotalRollsElement = document.getElementById('output-total-rolls');
-  const outputTotalNumberElement = document.getElementById('output-total-number');
+  const outputTotalRollsElement = document.getElementById("output-total-rolls");
+  const outputTotalNumberElement = document.getElementById(
+    "output-total-number"
+  );
 
   outputTotalNumberElement.textContent = enteredNumber;
   outputTotalRollsElement.textContent = numberOfRolls;
