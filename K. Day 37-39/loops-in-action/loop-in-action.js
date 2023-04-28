@@ -70,12 +70,34 @@ const rollDiceButtonElement = document.querySelector("#statistics button");
 function rollDice() {}
 
 function deriveNumberOfDiceRolls() {
-  const targetNumberInputElement = document.getElementById("user-target-number");
+  const targetNumberInputElement =
+    document.getElementById("user-target-number");
   const diceRollsListElement = document.getElementById("dice-rolls");
 
   const enteredNumber = targetNumberInputElement.value;
-  diceRollsListElement.innerHTML = '';
+  diceRollsListElement.innerHTML = "";
 
+  let hasRolledTargetNumber = false;
+  let numberOfRolls = 0;
+
+  while (!hasRolledTargetNumber) {
+    const rolledNumber = rollDice();
+    // if (rolledNumber == enteredNumber) {
+    //   hasRolledTargetNumber = true;
+    // }
+    numberOfRolls++;
+    const newRollsListItemElement = document.createElement('li');
+    const outputText = 'Roll ' + numberOfRolls + ': ' + rolledNumber;
+    newRollsListItemElement.textContent = outputText;
+    diceRollsListElement.append(newRollsListItemElement);
+    hasRolledTargetNumber = rolledNumber == enteredNumber;
+  }
+
+  const outputTotalRollsElement = document.getElementById('output-total-rolls');
+  const outputTotalNumberElement = document.getElementById('output-total-number');
+
+  outputTotalNumberElement.textContent = enteredNumber;
+  outputTotalRollsElement.textContent = numberOfRolls;
 }
 
 rollDiceButtonElement.addEventListener("click", deriveNumberOfDiceRolls);
