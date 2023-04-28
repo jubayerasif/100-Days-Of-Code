@@ -62,3 +62,5 @@ function displayUserData() {
 }
 
 displayUserDataButtonElement.addEventListener("click", displayUserData);
+
+// Statistics / Roll the Dice
