@@ -8,7 +8,7 @@
 let anchorElement = document.getElementById("external-link");
 anchorElement.href = "https://google.com";
 
-// // document.querySelector('#')
+document.querySelector('#')
 
 // // ADD AN ELEMENT 
 // // 1. Create the new clement
