@@ -10,7 +10,7 @@ anchorElement.href = "https://google.com";
 
 document.querySelector('#')
 
-// // ADD AN ELEMENT 
+// // ADD AN ELEMENT
 // // 1. Create the new clement
 
 // let newAnchorElement = document.createElement("a");
