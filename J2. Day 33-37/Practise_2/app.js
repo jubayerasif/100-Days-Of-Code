@@ -1,4 +1,3 @@
-
 let paragraphElement = document.querySelector("p");
 
 function changeParagraphText(event) {
