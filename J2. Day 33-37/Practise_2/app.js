@@ -1,24 +1,24 @@
-let paragraphElement = document.querySelector("p");
+// let paragraphElement = document.querySelector("p");
 
-function changeParagraphText(event) {
-  paragraphElement.textContent = "Clicked";
-  console.log("Paragraph Clicked Here!");
-    console.log(event);
-}
+// function changeParagraphText(event) {
+//   paragraphElement.textContent = "Clicked";
+//   console.log("Paragraph Clicked Here!");
+//     console.log(event);
+// }
 
-paragraphElement.addEventListener("click", changeParagraphText);
+// paragraphElement.addEventListener("click", changeParagraphText);
 
-let inputElement = document.querySelector("input");
+// let inputElement = document.querySelector("input");
 
-function retrieveUserInput(event) {
-  //   let enteredText = inputElement.value;
-  //   let enteredText = event.target.value;
-  let enteredText = event.data;
-  console.log(enteredText);
-  //   console.log(event);
-}
+// function retrieveUserInput(event) {
+//   //   let enteredText = inputElement.value;
+//   //   let enteredText = event.target.value;
+//   let enteredText = event.data;
+//   console.log(enteredText);
+//   //   console.log(event);
+// }
 
-inputElement.addEventListener("input", retrieveUserInput);
+// inputElement.addEventListener("input", retrieveUserInput);
 
 
 
