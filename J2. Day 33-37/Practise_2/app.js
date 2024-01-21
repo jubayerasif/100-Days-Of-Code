@@ -1,3 +1,4 @@
+// Normal Practice
 // let paragraphElement = document.querySelector("p");
 
 // function changeParagraphText(event) {
@@ -19,10 +20,6 @@
 // }
 
 // inputElement.addEventListener("input", retrieveUserInput);
-
-
-
-
 
 
 const productNameInputElement = document.getElementById('product-name');
