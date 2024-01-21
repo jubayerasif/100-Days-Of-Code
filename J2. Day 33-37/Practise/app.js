@@ -42,5 +42,5 @@ firstParagraph.parentElement.append(firstParagraph);
 
 // // innerHTML
 
-firstParagraph.innerHTML = "<p>Hi there! <strong>JS is important</strong></p>";
+firstParagraph.innerHTML = "<p>Hi there! <strong>It is important</strong></p>";
 
