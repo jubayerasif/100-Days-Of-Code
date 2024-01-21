@@ -25,21 +25,21 @@
 
 
 
-// const productNameInputElement = document.getElementById('product-name');
-// const remainingCharsElement = document.getElementById('remaining-chars');
+const productNameInputElement = document.getElementById('product-name');
+const remainingCharsElement = document.getElementById('remaining-chars');
 
-// const maxAllowedChars = productNameInputElement.maxLength;
+const maxAllowedChars = productNameInputElement.maxLength;
 
-// function updateRemainingCharacters(){
-//     const enteredText = event.target.value;
-//     const enteredTextLength = enteredText.length;
+function updateRemainingCharacters(){
+    const enteredText = event.target.value;
+    const enteredTextLength = enteredText.length;
 
-//     const remainingCharacters = maxAllowedChars - enteredTextLength;
+    const remainingCharacters = maxAllowedChars - enteredTextLength;
 
-//     remainingCharsElement.textContent = remainingCharacters;
-// }
+    remainingCharsElement.textContent = remainingCharacters;
+}
 
-// productNameInputElement.addEventListener('input', updateRemainingCharacters)
+productNameInputElement.addEventListener('input', updateRemainingCharacters)
 
-// const spanElement = document.getElementById('remaining-chars');
-// spanElement.style.color = 'rgb(0, 120, 50)';
+const spanElement = document.getElementById('remaining-chars');
+spanElement.style.color = 'rgb(0, 120, 50)';
