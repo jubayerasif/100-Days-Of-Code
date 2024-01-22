@@ -2,7 +2,7 @@ for (let i = 0; i < 10; i++) {
   console.log(i);
 }
 
-const users = ["Any", "Max", "Joel"];
+const users = ["Any", "Max", "Chris"];
 
 for (const user of users) {
   console.log(user);
