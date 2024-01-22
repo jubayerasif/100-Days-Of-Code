@@ -7,10 +7,10 @@ if (myName === "Random") {
 let isLoggedIn = true;
 
 if (isLoggedIn === true) {
-  console.log("User is Not logged in!");
+  console.log("User is NOT logged in!");
 }
 
-const enteredUserName = "";
+const enteredUserName = ""; // 0
 
 if (enteredUserName) {
   console.log("Input is valid");
