@@ -1,17 +1,17 @@
-const myName = "Jubayer";
+const myName = "Random";
 
-if (myName === 'Jubayer') {
+if (myName === "Random") {
   console.log("Hello!", myName);
 }
 
 let isLoggedIn = true;
 
-if(isLoggedIn === true){
-  console.log('User is NOT logged in!');
+if (isLoggedIn === true) {
+  console.log("User is NOT logged in!");
 }
 
-const enteredUserName = '';
+const enteredUserName = "";
 
-if(enteredUserName){
-  console.log('Input is valid');
+if (enteredUserName) {
+  console.log("Input is valid");
 }
