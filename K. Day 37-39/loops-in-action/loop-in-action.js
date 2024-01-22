@@ -40,8 +40,8 @@ highlightLinksButtonElement.addEventListener("click", highlightLinks);
 
 const dummyUserData = {
   firstName: "Jubayer",
-  lastName: "Hasan",
-  age: 18,
+  lastName: "Asif",
+  age: 20,
 };
 
 const displayUserDataButtonElement =
