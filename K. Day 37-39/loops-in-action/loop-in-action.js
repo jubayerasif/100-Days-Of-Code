@@ -68,7 +68,7 @@ displayUserDataButtonElement.addEventListener("click", displayUserData);
 const rollDiceButtonElement = document.querySelector("#statistics button");
 
 function rollDice() {
-  return Math.floor(Math.random() * 6) + 1;
+  return Math.floor(Math.random() * 6) + 1; // Math.floor(): 6:44 => 7
 }
 
 function deriveNumberOfDiceRolls() {
