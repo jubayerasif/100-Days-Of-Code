@@ -10,5 +10,5 @@
 ### 2. Viewing ThirdParty Source Code & Module Summary
 ### 3. What is The Backend & Why Do We Need Server-side Code
 ### 4. Dynamic Websites vs Static Websites
-### 5. Frontend vs Backend vs Fullstack Development
+### 5. Frontend vs Backend vs Full-stack Development
 ### 6. Choosing a Backend Servers-ide Programming Language
