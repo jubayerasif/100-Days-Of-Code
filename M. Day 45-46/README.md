@@ -14,28 +14,9 @@
 ### 6. Choosing a Backend Servers-ide Programming Language
 # Day 47
 ## Things covered:
-### 1.
-### 2.
-### 3.
-### 4.
-### 5.
-### 6.
-### 7.
-### 8.
-### 9.
-### 10.
-### 11.
-### 12.
-# Day 45
-## Things covered:
-### 1.
-### 2.
-### 3.
-### 4.
-### 5.
-### 6.
-### 7.
-### 8.
-### 9.
-### 10.
-### 11.
+### 1. Executing NodeJS Code
+### 2. Using the macOS Terminal
+### 3. Using the Windows Command Prompt
+### 4. Creating a Custom NodeJS Server
+### 5. Handling Requests & Creating Custom Responses
+### 6. Doing More Server-side Work
