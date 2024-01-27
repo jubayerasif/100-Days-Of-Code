@@ -1,4 +1,13 @@
-const http = require("http");
+const express = require("express");
+
+const app = express();
+
+app.get("/currenttime", function(){
+  
+});
+
+app.listen(3000);
+
 
 function handleRequest(request, response) {
   if (request.url === "/currenttime") {
