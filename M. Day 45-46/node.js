@@ -1,3 +1,5 @@
-const userName = "MR: Code";
+const http = require('http');
 
-console.log(userName);
+const server = http.createServer();
+
+server.listen();
