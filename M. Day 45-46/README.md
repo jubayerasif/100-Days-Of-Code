@@ -12,7 +12,7 @@
 ### 4. Dynamic Websites vs Static Websites
 ### 5. Frontend vs Backend vs Full-stack Development
 ### 6. Choosing a Backend Servers-ide Programming Language
-# Day 45
+# Day 47
 ## Things covered:
 ### 1.
 ### 2.
