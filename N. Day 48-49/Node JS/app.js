@@ -8,8 +8,6 @@ function handleRequest(request, response) {
     response.statusCode = 200;
     response.end("<h1>Hello World!</h1>");
   }
-  // localhost:3000/current-time
-  // localhost:3000
 }
 
 const server = http.createServer(handleRequest);
