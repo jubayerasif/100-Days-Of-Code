@@ -22,7 +22,7 @@
 function handleRequest(request, response) {
   console.log("Received request for:", request.url);
 
-  if (request.url === "/current-time") {
+  if (request.url === "/currenttime") {
     response.setHeader("Content-Type", "text/plain");
     response.statusCode = 200;
     response.end(new Date().toISOString());
@@ -30,10 +30,7 @@ function handleRequest(request, response) {
     response.setHeader("Content-Type", "text/html");
     response.statusCode = 200;
     response.end("<h1>Hello World!</h1>");
-  } else {
-    response.setHeader("Content-Type", "text/plain");
-    response.statusCode = 404;
-    response.end("Not Found");
   }
 }
-
+const server = http.createServer(handleRequest);
+server.listen(3000);
