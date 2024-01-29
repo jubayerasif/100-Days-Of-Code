@@ -39,8 +39,17 @@ app.get('/users', function(req, res){
   const fileData = fs.readFileSync(filePath);
   const existingUsers = JSON.parse(fileData);
 
-  res.send(existingUsers);
-})
+  let responseData = '<ul>';
+
+  for(const user of existingUsers) {
+    responseData += '<li>' + user + '</li>';
+};
+
+  responseData += '</ul>';
+
+  // res.send(existingUsers);
+  res.send(responseData);
+});
 
 app.listen(3000);// Start the server on port 3000
 
