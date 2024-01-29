@@ -19,7 +19,6 @@ app.get("/", function (req, res) {
 
 app.post("/store-user", function (req, res) {
   const userName = req.body.username;
-  // console.log(userName);
 
   const filePath = path.join(__dirname, "data", "users.json");
 
@@ -30,24 +29,7 @@ app.post("/store-user", function (req, res) {
 
   fs.writeFileSync(filePath, JSON.stringify(existingUsers));
 
-  res.send("<h1>Username Stored!</h1>");
+  res.send("<h1>Username stored!</h1>");
 });
 
-app.listen(3000);// Start the server on port 3000
-
-// function handleRequest(request, response) {
-//   if (request.url === "/currenttime") {
-//     response.statusCode = 200;
-//     response.end("<h1>" + new Date().toISOString() + "</h1>");
-//   } else if (request.url === "/") {
-//     response.statusCode = 200;
-//     response.end("<h1>Hello World!</h1>");
-//   }
-// }
-
-// const server = http.createServer(handleRequest);
-
-// server.listen(3000);
-
-/// ctrl alt = n to run the code
-/// clt + c to stop the code
+app.listen(3000);
