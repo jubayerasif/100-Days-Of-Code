@@ -1,16 +1,13 @@
 {
-  "name": "100-days-of-code",
+  "name": "n.-day-48-49",
   "version": "1.0.0",
-  "description": "Starting Node and Express",
+  "description": "Getting started with node  & Express!",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jubayerasif/100-Days-Of-Code.git"
-  },
   "author": "Jubayer Hasan Asif",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
   }

@@ -5,11 +5,7 @@ const express = require("express");
 
 const app = express();
 
-app.use(
-  express.urlencoded({
-    expended: false,
-  })
-);
+app.use(express.urlencoded({expended: false}));
 
 app.get("/currenttime", function (req, res) {
   res.send("<h1>" + new Date().toISOString() + "</h1>");
@@ -17,7 +13,7 @@ app.get("/currenttime", function (req, res) {
 
 app.get("/", function (req, res) {
   res.send(
-    "<form action='/store-user' method='POST'><label>Your Name:</label><input type= 'text'><button>Submit</button></form>"
+    "<form action='/store-user' method='POST'><label>Your Name</label><input type= 'text' name='username'><button>Submit</button></form>"
   );
 }); // localhost:3000
 
@@ -28,9 +24,11 @@ app.post("/store-user", function (req, res) {
   const filePath = path.join(__dirname, "data", "users.json");
 
   const fileData = fs.readFileSync(filePath);
-  const existingUsers = JSON.parse(fileData);
+  let existingUsers = JSON.parse(fileData);
 
+  const newUser = { name: userName};
   existingUsers.push(userName);
+
   fs.writeFileSync(filePath, JSON.stringify(existingUsers));
 
   res.send("<h1>Username Stored!</h1>");
