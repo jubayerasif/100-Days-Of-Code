@@ -2,7 +2,11 @@ const express = require("express");
 
 const app = express();
 
-app.use(express.urlencoded());
+app.use(
+  express.urlencoded({
+    expended: false,
+  })
+);
 
 app.get("/currenttime", function (req, res) {
   res.send("<h1>" + new Date().toISOString() + "</h1>");
