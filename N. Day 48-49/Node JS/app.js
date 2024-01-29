@@ -2,9 +2,9 @@ const express = require("express");
 
 const app = express();
 
-app.get("/currenttime", function(){
+app.get("/currenttime", function(req, res){ 
   
-});
+});// localhost:3000 /currenttime
 
 app.listen(3000);
 
