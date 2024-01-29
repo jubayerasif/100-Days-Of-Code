@@ -33,6 +33,15 @@ app.post("/store-user", function (req, res) {
   res.send("<h1>Username Stored!</h1>");
 });
 
+app.get('/users', function(req, res){
+  const filePath = path.join(__dirname, "data", "users.json");
+
+  const fileData = fs.readFileSync(filePath);
+  const existingUsers = JSON.parse(fileData);
+
+  res.send(existingUsers);
+})
+
 app.listen(3000);// Start the server on port 3000
 
 // function handleRequest(request, response) {
