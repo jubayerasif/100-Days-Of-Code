@@ -7,7 +7,7 @@ app.get("/currenttime", function(req, res){
 }); // localhost:3000 /currenttime
 
 app.get("/", function(req, res){
-  res.end("<h1>Hello World!</h1>");
+  res.end("<form action='store-user' method='POST;><label>Your Name:<input type= 'text'></label><button>Submit</button></form>");
 }); // localhost:3000
 
 app.listen(3000); // Start the server on port 3000
