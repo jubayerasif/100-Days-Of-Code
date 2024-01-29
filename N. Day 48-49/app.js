@@ -40,11 +40,9 @@ app.get('/users', function(req, res){
   const existingUsers = JSON.parse(fileData);
 
   let responseData = '<ul>';
-
   for(const user of existingUsers) {
     responseData += '<li>' + user + '</li>';
-};
-
+  };
   responseData += '</ul>';
 
   // res.send(existingUsers);
