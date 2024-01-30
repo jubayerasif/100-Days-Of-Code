@@ -1,12 +1,12 @@
 {
-  "name": "web-development-complete-guide",
+  "name": "web-development-js-project",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Maximilian Schwarzmüller (Academind GmbH)",
+  "author": "Jubayer Hasan Asif",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
