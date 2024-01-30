@@ -3,11 +3,14 @@
         "name":"Taj Hotel",
         "address":"India",
         "cuisine":"Nothing",
-        "website":"https://www.tajhotels.com/","description":"It's good!"
-        },{
+        "website":"https://www.tajhotels.com/",
+        "description":"It's good!"
+    },
+    {
         "name":"Delhi Darbar BD",
         "address":"Bangladesh",
         "cuisine":"Indian",
-        "website":"https://www.delhidarbarbd.com/","description":"It's good!."
+        "website":"https://www.delhidarbarbd.com/",
+        "description":"It's good!."
     }
 ]
