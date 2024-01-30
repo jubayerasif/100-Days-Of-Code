@@ -18,7 +18,7 @@ app.get('/recommend', function(req, res){
     const htmlFilePath = path.join(__dirname, 'views', 'recommend.html');
     res.sendFile(htmlFilePath);
 });
-app.get('/recommend', function(req, res){
+app.post('/recommend', function(req, res){
     const restaurant = req.body;
     const filePath = path.join(__dirname, 'data', 'restaurants.json');
 
