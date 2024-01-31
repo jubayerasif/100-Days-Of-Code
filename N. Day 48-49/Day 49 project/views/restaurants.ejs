@@ -1,75 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eat-well - Make The World A Tastier Place</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="stylesheet" href="styles/restaurants.css" />
-    <script src="scripts/responsive.js" defer></script>
-  </head>
-  <body>
-    <header id="main-header">
-      <div id="logo"><a href="/index">Eat-well</a></div>
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/restaurants">Browse Restaurants</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Share a Restaurant</a>
-          </li>
-          <li class="nav-item"><a href="/about">About Eat-well</a></li>
-        </ul>
-      </nav>
-      <button id="drawer-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <aside id="mobile-drawer">
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/restaurants">Browse Restaurants</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend" >Share a Restaurant</a>
-          </li>
-          <li class="nav-item"><a href="/about" target="_blank">About Eat-well</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main>
-      <h1>Recommended restaurants</h1>
-      <p>Find your next favorite restaurants with help of our other users!</p>
-      <p>We found <%= numbersOfRestaurants %> restaurants.</p>
-      <ul id="restaurants-list">
-        <% for (const restaurant of restaurants) { %>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eat-well - Make The World A Tastier Place</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles/shared.css" />
+  <link rel="stylesheet" href="styles/restaurants.css" />
+  <script src="scripts/responsive.js" defer></script>
+</head>
+
+<body>
+  <!-- The starting header tag -->
+  <header id="main-header">
+    <div id="logo"><a href="/index">Eat-well</a></div>
+    <nav>
+      <ul>
+        <li class="nav-item">
+          <a href="/restaurants">Browse Restaurants</a>
+        </li>
+        <li class="nav-item">
+          <a href="/recommend">Share a Restaurant</a>
+        </li>
+        <li class="nav-item"><a href="/about">About Eat-well</a></li>
+      </ul>
+    </nav>
+    <button id="drawer-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  <!-- The closing header tag -->
+  </header>
+
+  <!-- The aside tag is used to define some content aside from the content it is associated with. It is often used to contain related but separate information. n this case, it is used to create a navigation drawer for mobile devices. -->
+  <aside id="mobile-drawer">
+    <!-- The nav tag is used to define a section of a document containing navigation links. -->
+    <nav>
+      <!-- The ul tag is used to define an unordered list of items -->
+      <ul>
+        <!-- The li tag is used to define a list item -->
+        <li class="nav-item">
+          <!-- The a tag is used to define a hyperlink -->
+          <a href="/restaurants">Browse Restaurants</a>
+        </li>
+        <li class="nav-item">
+          <a href="/recommend">Share a Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <!-- The target attribute of the a tag is used to specify where to open the linked document. In this case, it is set to "_blank" which means it will open in a new tab. -->
+          <a href="/about" target="_blank">About Eat-well</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- The main tag is used to define the main content of a document. -->
+  <main>
+    <!-- The h1 tag is used to define a heading. It should be used for the most important heading on the page. -->
+    <h1>Recommended restaurants</h1>
+    <!-- The p tag is used to define a paragraph -->
+    <p>Find your next favorite restaurants with help of our other users!</p>
+    <!-- The paragraph below is displaying the number of restaurants found -->
+    <p>We found <%= numbersOfRestaurants %> restaurants.</p>
+    <!-- The ul tag is used to define an unordered list of items -->
+    <ul id="restaurants-list">
+      <!-- The for loop is used to iterate through the array of restaurants and create a list item for each one. -->
+      <% for (const restaurant of restaurants) { %>
         <li class="restaurant-item">
+          <!-- The article tag is used to define a self-contained piece of content. In this case, it is used to define a single restaurant. -->
           <article>
-            <h2><%= restaurant.name %></h2>
+            <!-- The h2 tag is used to define a heading. It should be used for less important headings than the h1 tag. In this case, it is used to define the name of the restaurant. -->
+            <h2>
+              <%= restaurant.name %>
+            </h2>
+            <!-- The div tag is used to group block-level elements together. In this case, it is used to define the meta-information of the restaurant such as cuisine and address. -->
             <div class="restaurant-meta">
-              <p><%= restaurant.cuisine %></p>
-              <p> <%= restaurant.address %></p>
+              <!-- The p tag is used to define a paragraph -->
+              <p>
+                <%= restaurant.cuisine %>
+              </p>
+              <p>
+                <%= restaurant.address %>
+              </p>
             </div>
+            <!-- The p tag is used to define a paragraph -->
             <p>
+              <!-- The paragraph is displaying the restaurant's description -->
               <%= restaurant.description %>
             </p>
+            <!-- The div tag is used to group block-level elements together. In this case, it is used to define the actions that can be taken on the restaurant such as viewing the website. -->
             <div class="restaurant-actions">
+              <!-- The a tag is used to define a hyperlink -->
               <a href=" <%= restaurant.website %>" target="_blank">View Website</a>
             </div>
           </article>
         </li>
+        <!-- End of the for loop -->
         <% } %>
-      </ul>
-    </main>
-  </body>
+    </ul>
+  </main>
+</body>
+
 </html>
