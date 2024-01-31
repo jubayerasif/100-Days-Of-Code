@@ -16,7 +16,6 @@
 </head>
 
 <body>
-  <!-- The starting header tag -->
   <header id="main-header">
     <div id="logo"><a href="/index">Eat-well</a></div>
     <nav>
@@ -35,76 +34,57 @@
       <span></span>
       <span></span>
     </button>
-  <!-- The closing header tag -->
   </header>
 
-  <!-- The aside tag is used to define some content aside from the content it is associated with. It is often used to contain related but separate information. n this case, it is used to create a navigation drawer for mobile devices. -->
   <aside id="mobile-drawer">
-    <!-- The nav tag is used to define a section of a document containing navigation links. -->
     <nav>
-      <!-- The ul tag is used to define an unordered list of items -->
       <ul>
-        <!-- The li tag is used to define a list item -->
         <li class="nav-item">
-          <!-- The a tag is used to define a hyperlink -->
           <a href="/restaurants">Browse Restaurants</a>
         </li>
         <li class="nav-item">
           <a href="/recommend">Share a Restaurant</a>
         </li>
         <li class="nav-item">
-          <!-- The target attribute of the a tag is used to specify where to open the linked document. In this case, it is set to "_blank" which means it will open in a new tab. -->
           <a href="/about" target="_blank">About Eat-well</a>
         </li>
       </ul>
     </nav>
   </aside>
 
-  <!-- The main tag is used to define the main content of a document. -->
   <main>
-    <!-- The h1 tag is used to define a heading. It should be used for the most important heading on the page. -->
     <h1>Recommended restaurants</h1>
-    <!-- The p tag is used to define a paragraph -->
-    <p>Find your next favorite restaurants with help of our other users!</p>
-    <!-- The paragraph below is displaying the number of restaurants found -->
-    <p>We found <%= numbersOfRestaurants %> restaurants.</p>
-    <!-- The ul tag is used to define an unordered list of items -->
-    <ul id="restaurants-list">
-      <!-- The for loop is used to iterate through the array of restaurants and create a list item for each one. -->
-      <% for (const restaurant of restaurants) { %>
-        <li class="restaurant-item">
-          <!-- The article tag is used to define a self-contained piece of content. In this case, it is used to define a single restaurant. -->
-          <article>
-            <!-- The h2 tag is used to define a heading. It should be used for less important headings than the h1 tag. In this case, it is used to define the name of the restaurant. -->
-            <h2>
-              <%= restaurant.name %>
-            </h2>
-            <!-- The div tag is used to group block-level elements together. In this case, it is used to define the meta-information of the restaurant such as cuisine and address. -->
-            <div class="restaurant-meta">
-              <!-- The p tag is used to define a paragraph -->
-              <p>
-                <%= restaurant.cuisine %>
-              </p>
-              <p>
-                <%= restaurant.address %>
-              </p>
-            </div>
-            <!-- The p tag is used to define a paragraph -->
-            <p>
-              <!-- The paragraph is displaying the restaurant's description -->
-              <%= restaurant.description %>
-            </p>
-            <!-- The div tag is used to group block-level elements together. In this case, it is used to define the actions that can be taken on the restaurant such as viewing the website. -->
-            <div class="restaurant-actions">
-              <!-- The a tag is used to define a hyperlink -->
-              <a href=" <%= restaurant.website %>" target="_blank">View Website</a>
-            </div>
-          </article>
-        </li>
-        <!-- End of the for loop -->
+    <% if(numbersOfRestaurants===0) { %>
+      <p>Unfortunately, we have no restaurants yet - maybe start recommending some?</p>
+      <% } else { %>
+        <p>Find your next favorite restaurants with help of our other users!</p>
+        <p>We found <%= numbersOfRestaurants %> restaurants.</p>
+        <ul id="restaurants-list">
+          <% for (const restaurant of restaurants) { %>
+            <li class="restaurant-item">
+              <article>
+                <h2>
+                  <%= restaurant.name %>
+                </h2>
+                <div class="restaurant-meta">
+                  <p>
+                    <%= restaurant.cuisine %>
+                  </p>
+                  <p>
+                    <%= restaurant.address %>
+                  </p>
+                </div>
+                <p>
+                  <%= restaurant.description %>
+                </p>
+                <div class="restaurant-actions">
+                  <a href="<%= restaurant.website %>" target="_blank">View Website</a>
+                </div>
+              </article>
+            </li>
+            <% } %>
+        </ul>
         <% } %>
-    </ul>
   </main>
 </body>
-
 </html>

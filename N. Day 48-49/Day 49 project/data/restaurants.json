@@ -12,5 +12,12 @@
         "cuisine":"Indian",
         "website":"https://www.delhidarbarbd.com/",
         "description":"It's good!."
-    }
+    },
+    {
+        "name": "Kutumbari",
+        "address": "AK Khan, Chittagong",
+        "cuisine": "Deshi",
+        "website": "http://kutumbari.com/",
+        "description": "It has good food."
+      }
 ]
