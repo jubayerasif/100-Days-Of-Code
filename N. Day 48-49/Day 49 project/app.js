@@ -27,7 +27,7 @@ app.get("/restaurants", function (req, res) {
   const storedRestaurants = JSON.parse(fileData);
 
   res.render("restaurants", {
-    numbersOfRestaurants: storedRestaurants.length,
+    numberOfRestaurants: storedRestaurants.length,
     restaurants: storedRestaurants,
   });
 });
