@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!---CSS--->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/shared.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <!---JavaScript--->
@@ -14,25 +17,13 @@
     <title>Eat-well - Make The World A Tastier Place</title>
   </head>
   <body>
-    <header id="main-header">
-      <div id="logo"><a href="/index">Eat-well</a></div>
-      <nav>
-        <ul>
-          <li class="nav-item"><a href="/restaurants">Browse Restaurants</a></li>
-          <li class="nav-item"><a href="/recommend">Share a Restaurant</a></li>
-          <li class="nav-item"><a href="/about">About Eat-well</a></li>
-        </ul>
-      </nav>
-      <button id="drawer-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+    <%- include('includes/header') %>
     <aside id="mobile-drawer">
       <nav>
         <ul>
-          <li class="nav-item"><a href="/restaurants">Browse Restaurants</a></li>
+          <li class="nav-item">
+            <a href="/restaurants">Browse Restaurants</a>
+          </li>
           <li class="nav-item"><a href="/recommend">Share a Restaurant</a></li>
           <li class="nav-item"><a href="/about">About Eat-well</a></li>
         </ul>
