@@ -1,13 +1,30 @@
  # Restaurant Recommendation App
 
-This is a simple restaurant recommendation app built with Node.js, Express, and EJS. The app allows users to view a list of restaurants, add new restaurants, and view a confirmation page after adding a new restaurant.
+This Node.js Express app allows users to view a list of restaurants, recommend new restaurants, and view a confirmation page after submitting a recommendation.
+
+## Prerequisites
+
+- Node.js and npm installed
 
 ## Installation
 
-To install the app, clone the repository and run the following commands:
+Clone the repository:
+
+```
+git clone https://github.com/your-username/restaurant-recommendation-app.git
+```
+
+Install the dependencies:
 
 ```
 npm install
+```
+
+## Running the App
+
+To run the app, use the following command:
+
+```
 npm start
 ```
 
@@ -23,32 +40,47 @@ To use the app, visit the following URLs:
 
 ## Code Overview
 
-The app is structured as follows:
+### 1. App Setup
 
-* The `app.js` file is the main entry point of the app. It sets up the Express app and defines the routes.
-* The `views` directory contains the EJS templates for the different pages of the app.
-* The `public` directory contains the static assets for the app, such as CSS and JavaScript files.
-* The `data` directory contains the JSON file with the list of restaurants.
-
-### app.js
-
-The `app.js` file is the main entry point of the app. It sets up the Express app and defines the routes.
+The app is set up using Express, a popular Node.js framework for building web applications.
 
 ```javascript
 const express = require("express");
 const app = express();
 ```
 
-The first few lines of the file import the necessary modules and create an Express app.
+### 2. View Engine
+
+The app uses EJS as the view engine. EJS is a simple templating language that allows you to embed JavaScript code in HTML templates.
 
 ```javascript
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+```
+
+### 3. Static Files
+
+The app serves static files, such as CSS and JavaScript, from the `public` directory.
+
+```javascript
 app.use(express.static("public"));
+```
+
+### 4. Body Parser
+
+The app uses the `express.urlencoded` middleware to parse request bodies in the `application/x-www-form-urlencoded` format.
+
+```javascript
 app.use(express.urlencoded({ extended: false }));
 ```
 
-These lines set up the view engine, static asset directory, and body parser middleware.
+### 5. Routes
+
+The app defines several routes, each handling a different request.
+
+#### 5.1 Home Page
+
+The home page route simply renders the `index.ejs` template.
 
 ```javascript
 app.get("/", function (req, res) {
@@ -56,11 +88,13 @@ app.get("/", function (req, res) {
 });
 ```
 
-This route handler renders the home page of the app.
+#### 5.2 Restaurants Page
+
+The restaurants page route fetches a list of restaurants from a JSON file, renders the `restaurants.ejs` template, and passes the number of restaurants and the list of restaurants to the template.
 
 ```javascript
 app.get("/restaurants", function (req, res) {
   const filePath = path.join(__dirname, "data", "restaurants.json");
 
   const fileData = fs.readFileSync(filePath);
-  const storedRestaurants = JSON.parse(fileData
+  const storedRestaurants = JSON.parse(fileData);
