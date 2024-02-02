@@ -1,69 +1,56 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 
-const express = require("express");
+const express = require('express');
 
 const app = express();
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/currenttime", function (req, res) {
-  res.send("<h1>" + new Date().toISOString() + "</h1>");
-}); // localhost:3000/currenttime
-
-app.get("/", function (req, res) {
-  res.send(
-    '<form action="/store-user" method="POST"><label>Your Name : </label><input type="text" name="username"><button>Submit</button></form>'
-  );
-}); // localhost:3000/
-
-app.post("/store-user", function (req, res) {
-  const userName = req.body.username;
-  // console.log(userName);
-
-  const filePath = path.join(__dirname, "data", "users.json");
-
-  const fileData = fs.readFileSync(filePath);
-  const existingUsers = JSON.parse(fileData);
-
-  existingUsers.push(userName);
-
-  fs.writeFileSync(filePath, JSON.stringify(existingUsers));
-
-  res.send("<h1>Username Stored!</h1>");
+app.get('/', function (req, res) {
+  res.render('index');
 });
 
-app.get('/users', function(req, res){
-  const filePath = path.join(__dirname, "data", "users.json");
+app.get('/restaurants', function (req, res) {
+  const filePath = path.join(__dirname, 'data', 'restaurants.json');
 
   const fileData = fs.readFileSync(filePath);
-  const existingUsers = JSON.parse(fileData);
+  const storedRestaurants = JSON.parse(fileData);
 
-  let responseData = '<ul>';
-  for(const user of existingUsers) {
-    responseData += '<li>' + user + '</li>';
-  };
-  responseData += '</ul>';
-
-  // res.send(existingUsers);
-  res.send(responseData);
+  res.render('restaurants', {
+    numberOfRestaurants: storedRestaurants.length,
+    restaurants: storedRestaurants,
+  });
 });
 
-app.listen(3000);// Start the server on port 3000
+app.get('/recommend', function (req, res) {
+  res.render('recommend');
+});
 
-// function handleRequest(request, response) {
-//   if (request.url === "/currenttime") {
-//     response.statusCode = 200;
-//     response.end("<h1>" + new Date().toISOString() + "</h1>");
-//   } else if (request.url === "/") {
-//     response.statusCode = 200;
-//     response.end("<h1>Hello World!</h1>");
-//   }
-// }
+app.post('/recommend', function (req, res) {
+  const restaurant = req.body;
+  const filePath = path.join(__dirname, 'data', 'restaurants.json');
 
-// const server = http.createServer(handleRequest);
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
 
-// server.listen(3000);
+  storedRestaurants.push(restaurant);
 
-/// ctrl alt = n to run the code
-/// clt + c to stop the code
+  fs.writeFileSync(filePath, JSON.stringify(storedRestaurants));
+
+  res.redirect('/confirm');
+});
+
+app.get('/confirm', function (req, res) {
+  res.render('confirm');
+});
+
+app.get('/about', function (req, res) {
+  res.render('about');
+});
+
+app.listen(3000);
