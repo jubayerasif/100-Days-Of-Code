@@ -13,14 +13,22 @@
 // }
 
 class Job {
-    constructor(jobTitle, place, salary) {
-        this.title = jobTitle;
-        this.location = place;
-        this.salary = salary;
-    }
+  constructor(jobTitle, place, salary) {
+    this.title = jobTitle;
+    this.location = place;
+    this.salary = salary;
+  }
+
+  describe() {
+    console.log(
+      `I'm a ${this.title}, I work in ${this.location}, and I make ${this.salary}.`
+    );
+  }
 }
 
-const developer = new Job('Developer', 'New York', 50000);
-console.log(developer);
-const driver = new Job('Driver', 'New York', 5000);
-console.log(driver);
+const developer = new Job("Developer", "New York", 50000);
+// console.log(developer);
+developer.describe();
+const driver = new Job("Driver", "New York", 5000);
+// console.log(driver);
+driver.describe();
