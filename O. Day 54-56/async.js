@@ -11,6 +11,8 @@ async function readFile() {
     //     console.log(fileData.toString());
     //     // start another async task that sends the data to a database
     //   });
+    // console.log("Hi there!");
+
 
     //   fs.readFile("data.txt")
     //     .then(function (fileData) {
@@ -22,6 +24,8 @@ async function readFile() {
     //     .cath(function (error) {
     //         console.log(error);
     //     });
+    // console.log("Hi there!");
+
 
     try {
         fileData = await fs.readFile("data.txt");
